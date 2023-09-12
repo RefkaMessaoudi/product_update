@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="product_update_view_form" model="ir.ui.view">
+            <field name="name">product.update.form</field>
+            <field name="model">product.update</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <group>
+                            <group>
+                                <field name="date" string="Date"/>
+                                <field name="user_id" string="Users"/>
+                                <field name="product_update" string="Case Updated"/>
+                            </group>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="product-update_view_tree" model="ir.ui.view">
+            <field name="name">product.update.tree</field>
+            <field name="model">product.update</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="date" string="Date"/>
+                    <field name="user_id" string="Users"/>
+                    <field name="product_update" string="Case Updated"/>
+                </tree>
+            </field>
+        </record>
+               <!-- actions opening views on models -->
+        <record id="product_update_action_window" model="ir.actions.act_window">
+            <field name="name">Product Update</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">product.update</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+    </data>
+</odoo>
+
