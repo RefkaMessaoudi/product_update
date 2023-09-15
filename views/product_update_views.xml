@@ -30,7 +30,7 @@
                 </tree>
             </field>
         </record>
-               <!-- actions opening views on models -->
+        <!-- actions opening views on models -->
         <record id="product_update_action_window" model="ir.actions.act_window">
             <field name="name">Product Update</field>
             <field name="type">ir.actions.act_window</field>

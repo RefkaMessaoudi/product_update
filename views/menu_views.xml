@@ -10,10 +10,13 @@
     <!--top menu product-->
     <menuitem name="Product"
               id="product_menu"
-              action="product_update.product_update_action_window"
-              parent="product_update.product_update_root"
+              parent="product_update_root"
               sequence="10"/>
-
+    <menuitem name="Products"
+              id="prod_menu"
+              action="product_update_action_window"
+              parent="product_menu"
+              sequence="20"/>
 
 </odoo>
 
