@@ -9,9 +9,7 @@
     'depends': ['stock'],
     'data': [
              'security/ir.model.access.csv',
-             'views/product_update_views.xml',
-             'views/menu_views.xml',
-
+             'views/product_template_views.xml',
              ],
     'images': [
                ],
